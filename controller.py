@@ -12,10 +12,6 @@ class Television(QMainWindow, Ui_MainWindow):
         super().__init__(*args, **kwargs)
         self.setupUi(self)
 
-        # self.radio_10.setChecked(True)
-        # self.button_submit.clicked.connect(lambda: self.submit())
-        # self.button_clear.clicked.connect(lambda: self.clear())
-
         self.__status = False
         self.__muted = False
         self.__volume = Television.MIN_VOLUME
