@@ -3,7 +3,7 @@ from controller import *
 
 def main():
     app = QApplication([])
-    window = Controller()
+    window = Television()
     window.show()
     app.exec()
 
