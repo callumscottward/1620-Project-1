@@ -77,7 +77,6 @@ class Television(QMainWindow, Ui_MainWindow):
         else:
             # Turns TV on if off and restores labels
             self.__status = True
-            self.label_main.setText('')
 
             if self.__muted:
                 self.label_volume.setText(f'VOL\n⊘')
@@ -85,6 +84,8 @@ class Television(QMainWindow, Ui_MainWindow):
                 self.label_volume.setText(f'VOL\n{self.__volume}')
 
             self.label_channel.setText(f'CH\n{self.__channel}')
+            self.label_main.setPixmap(self.channels[self.__channel - 1])
+            self.label_main.setScaledContents(True)
 
     def mute(self) -> None:
         """
