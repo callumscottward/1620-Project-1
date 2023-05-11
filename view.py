@@ -57,14 +57,14 @@ class Ui_MainWindow(object):
         self.line_remotebottom.setFrameShape(QtWidgets.QFrame.Shape.HLine)
         self.line_remotebottom.setFrameShadow(QtWidgets.QFrame.Shadow.Sunken)
         self.line_remotebottom.setObjectName("line_remotebottom")
-        self.label_off = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_off.setGeometry(QtCore.QRect(180, 120, 61, 41))
+        self.label_main = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_main.setGeometry(QtCore.QRect(160, 90, 101, 101))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(20)
-        self.label_off.setFont(font)
-        self.label_off.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_off.setObjectName("label_off")
+        self.label_main.setFont(font)
+        self.label_main.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_main.setObjectName("label_main")
         self.label_volume = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_volume.setGeometry(QtCore.QRect(80, 110, 61, 61))
         font = QtGui.QFont()
@@ -147,7 +147,7 @@ class Ui_MainWindow(object):
         self.button_mute.setObjectName("button_mute")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 625, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 625, 36))
         self.menubar.setObjectName("menubar")
         self.menuTelevision = QtWidgets.QMenu(parent=self.menubar)
         self.menuTelevision.setObjectName("menuTelevision")
@@ -163,7 +163,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Television"))
-        self.label_off.setText(_translate("MainWindow", "OFF"))
+        self.label_main.setText(_translate("MainWindow", "OFF"))
         self.label_volume.setText(_translate("MainWindow", "VOL\n"
 "0"))
         self.label_channel.setText(_translate("MainWindow", "CH\n"
