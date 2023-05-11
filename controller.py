@@ -11,7 +11,7 @@ class Television(QMainWindow, Ui_MainWindow):
 
     def __init__(self, *args, **kwargs) -> None:
         """
-        Initializes GUI controller, adding backend-frontend integration for calculator
+        Initializes GUI controller, adding backend-frontend integration for television
         based on view.py file.
         :param args: Essential for functionality of PyQt, based on Test 10 code
         :param kwargs: See above
